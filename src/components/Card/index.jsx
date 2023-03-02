@@ -1,13 +1,15 @@
 import CardContainer from "./style";
 import playImg from "../../assets/seta_play.png";
 
-function Card(){
+function Card({cards}){
     return(
         <CardContainer>
+            {cards.map((c,i) =>(
             <li>
-                <p>Pergunta 1</p>
+                <p>Pergunta {i+1}</p>
                 <img src={playImg} alt="Play"/>
             </li>
+            ))}
         </CardContainer>
     )
 }

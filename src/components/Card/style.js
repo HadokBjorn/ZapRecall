@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 const CardContainer = styled.ul`
-    width: 300px;
     height: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 25px;
+    margin-bottom:180px;
 
     li{
-        width: inherit;
+        width: 300px;
         height: 65px;
 
         padding: 15px;

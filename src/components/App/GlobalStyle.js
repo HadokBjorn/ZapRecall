@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
     body{
         background: #FB6B6B;
         border: 1px solid #DBDBDB;
-        height: 100vh;
+        height: 100%;
         width: 100%;
     }
     main{
@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 25px;
     }
 `
 export default GlobalStyle;
