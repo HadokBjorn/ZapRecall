@@ -4,8 +4,6 @@ const GlobalStyle = createGlobalStyle`
     body{
         background: #FB6B6B;
         border: 1px solid #DBDBDB;
-        height: 100%;
-        width: 100%;
     }
     main{
         width: 100%;

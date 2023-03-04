@@ -10,7 +10,7 @@ const CardContainer = styled.ul`
 
     li{
         width: 300px;
-        height: 65px;
+        min-height: 65px;
 
         padding: 15px;
 
@@ -30,6 +30,9 @@ const CardContainer = styled.ul`
         line-height: 19px;
 
         color: #333333;
+    }
+    .hidden{
+        display: none;
     }
 `
 
