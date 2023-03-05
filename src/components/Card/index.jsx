@@ -17,25 +17,28 @@ function Card({
     const [screen, setScreen] = useState(screenInitial);
 
     function AddQuestion(card,i) {
-        const newlist = [...screen];
-        newlist[i] = (<CardQuestion key={i} click={()=>AddAnswer(card,i)} card={card}/>)
+        const newList = [...screen];
+        newList[i] = (<CardQuestion key={i} click={()=>AddAnswer(card,i)} card={card}/>)
 
-        setScreen(newlist);
+        setScreen(newList);
         
         console.log("tá chamando a func")
         console.log("tela 1 estado inicial", screen)
-        console.log("newlist", newlist)
+        console.log("newlist", newList)
     }
     function AddAnswer(card,i){
         console.log("tá chamando a func AddAnswer")
         const newlist = [...screen];
-        newlist[i] = (<CardAnswer key={i} card={card}/>)
+        newlist[i] = (<CardAnswer 
+            key={i} 
+            card={card} 
+            indice={i} 
+            screen={screen}
+            setScreen={setScreen}
+            AddQuestion={AddQuestion}
+            />)
 
         setScreen(newlist);
-        
-        console.log("tá chamando a func")
-        console.log("tela 1 estado inicial", screen)
-        console.log("newlist", newlist)
     }
 
     return(

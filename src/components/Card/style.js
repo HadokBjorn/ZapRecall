@@ -21,8 +21,7 @@ const CardContainer = styled.ul`
         background: #FFFFFF;
         box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
         border-radius: 5px;
-    }
-    p{
+
         font-family: 'Recursive';
         font-style: normal;
         font-weight: 700;
@@ -31,8 +30,17 @@ const CardContainer = styled.ul`
 
         color: #333333;
     }
-    .hidden{
-        display: none;
+    .nao-lembra{
+        text-decoration-line: line-through;
+        color: #FF3030;
+    }
+    .quase-nao-lembra{
+        text-decoration-line: line-through;
+    color: #FF922E;
+    }
+    .zap{
+        text-decoration-line: line-through;
+        color: #2FBE34;
     }
 `
 
