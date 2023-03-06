@@ -1,9 +1,9 @@
 import FooterContainer from "./style";
 
-function Footer(){
+function Footer({cards, cardRespondido}){
     return(
-        <FooterContainer>
-            <p>0/4 CONCLUÍDOS</p>
+        <FooterContainer data-test="footer">
+            <p>{`${cardRespondido}/${cards} CONCLUÍDOS`}</p>
         </FooterContainer>
     )
 }

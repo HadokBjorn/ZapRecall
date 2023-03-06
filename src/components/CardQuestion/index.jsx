@@ -4,8 +4,8 @@ import { Question } from "./style";
 function CardQuestion({card, click,}){
     return(
         <Question className={''}>
-            <p>{card.question}</p>
-            <img onClick={click} src={setaVirar} alt="botão"/>
+            <p data-test="flashcard-text">{card.question}</p>
+            <img data-test="turn-btn" onClick={click} src={setaVirar} alt="botão"/>
         </Question>
     )
 }

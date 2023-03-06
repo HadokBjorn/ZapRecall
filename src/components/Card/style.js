@@ -34,9 +34,9 @@ const CardContainer = styled.ul`
         text-decoration-line: line-through;
         color: #FF3030;
     }
-    .quase-nao-lembra{
+    .quase-lembra{
         text-decoration-line: line-through;
-    color: #FF922E;
+        color: #FF922E;
     }
     .zap{
         text-decoration-line: line-through;
